@@ -1,0 +1,35 @@
+{
+  "name": "mhmotors-frontend",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Josh McEwen <joshuamcewenuk@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "server": "webpack-dev-server",
+    "start": "serve dist -l 8080"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.1",
+    "eslint-plugin-react": "^7.16.0",
+    "prettier": "^1.19.1",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "color": "^3.1.2",
+    "copy-webpack-plugin": "^5.0.5",
+    "file-loader": "^5.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-jss": "^10.0.0",
+    "serve": "^11.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
