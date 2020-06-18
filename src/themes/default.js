@@ -1,5 +1,5 @@
 const colors = {
-    primary: '101420',
+    primary: '#101420',
     accent: '#66F4FF',
 
     banner: {
