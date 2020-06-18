@@ -2,11 +2,14 @@ import { createUseStyles } from 'react-jss';
 
 export default createUseStyles({
     card: {
+        composes: 'ServiceCard',
         border: '1px solid #D8D8D8',
         borderRadius: '0.3em',
-        padding: '1.5em'
+        padding: '1.5em',
+        backgroundColor: '#fff'
     },
     heading: {
+        composes: 'ServiceCard__heading',
         margin: 0,
         fontWeight: 700,
         fontSize: '1.3em',
@@ -22,6 +25,7 @@ export default createUseStyles({
         }
     },
     contents: {
+        composes: 'ServiceCard__contents',
         color: ({ theme }) => theme.colors.body,
         lineHeight: 1.5,
 
