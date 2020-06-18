@@ -134,8 +134,8 @@ export default createUseStyles(({ colors, breakpoints }) => ({
     },
     image: {
         composes: 'Hero__image',
-        maxWidth: '15em',
-        padding: '2em 0',
+        maxWidth: '13em',
+        padding: '1em 0',
 
         [breakpoints.sm]: {
             maxWidth: '100%',
