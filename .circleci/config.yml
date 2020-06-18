@@ -1,0 +1,36 @@
+jobs:
+    build_and_deploy:
+      docker:
+        - image: google/cloud-sdk:alpine
+      working_directory: /app
+      steps:
+        - checkout
+        - gcp-cli/install
+        - gcp-cli/initialize
+        - run:
+            name: Submit build to Cloud Build
+            command: |
+              gcloud builds submit \
+                --tag gcr.io/${GOOGLE_PROJECT_ID}/${CIRCLE_SHA1} \
+                --gcs-log-dir gs://${LOG_BUCKET}
+        - run:
+            name: Deploy to Cloud Run
+            command: |
+              gcloud run deploy frontend \
+                --image gcr.io/${GOOGLE_PROJECT_ID}/${CIRCLE_SHA1} \
+                --platform managed \
+                --region ${GOOGLE_COMPUTE_ZONE} \
+                --allow-unauthenticated
+        - run:
+            name: Cleanup Container Registry
+            command: gcloud container images delete gcr.io/${GOOGLE_PROJECT_ID}/${CIRCLE_SHA1}:latest
+orbs:
+  gcp-cli: circleci/gcp-cli@1.8.4
+version: 2.1
+workflows:
+    build_and_deploy:
+      jobs:
+        - build_and_deploy:
+            filters:
+              branches:
+                only: master
