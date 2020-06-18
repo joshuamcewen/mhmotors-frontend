@@ -19,6 +19,7 @@
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "@babel/preset-react": "^7.7.4",
+    "@react-google-maps/api": "^1.9.7",
     "babel-loader": "^8.0.6",
     "color": "^3.1.2",
     "copy-webpack-plugin": "^5.0.5",
