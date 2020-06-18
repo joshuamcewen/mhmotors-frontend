@@ -1,6 +1,13 @@
 import { createUseStyles } from 'react-jss';
 
 export default createUseStyles(({ breakpoints, colors }) => ({
+    services: {
+        [breakpoints.sm]: {
+            padding: '1em 0 3em',
+            maxWidth: '60em',
+            margin: '0 auto'
+        }
+    },
     serviceHeader: {
         display: 'none',
 
