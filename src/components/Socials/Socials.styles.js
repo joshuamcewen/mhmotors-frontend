@@ -25,6 +25,10 @@ export default createUseStyles(({ colors, breakpoints }) => ({
         padding: '1em',
         marginRight: '1em',
 
+        '&:last-child': {
+            marginRight: 0
+        },
+
         '&:hover': {
             cursor: 'pointer',
             boxShadow: '0 0 0 0.5em rgba(255,255,255,0.15)',
