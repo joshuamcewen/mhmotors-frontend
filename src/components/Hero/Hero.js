@@ -32,7 +32,7 @@ const Hero = () => {
                         <p className={classes.paragraph}>
                             MH Motors is a small family run business,
                             established almost 20 years ago. We offer vehicle
-                            servicing, repairs and MOTs on vehicles of all makes
+                            servicing, repairs and MOT preparation on vehicles of all makes
                             and models from our garage located on the White Lund
                             Industrial Estate in Morecambe.
                         </p>
