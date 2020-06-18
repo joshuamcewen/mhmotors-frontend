@@ -1,6 +1,6 @@
 import { createUseStyles } from 'react-jss';
 
-export default createUseStyles(({ breakpoints, colors }) => ({
+export default createUseStyles(() => ({
     '@global': {
         'html, #root': {
             height: '100%'
