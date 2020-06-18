@@ -6,7 +6,7 @@ export default createUseStyles({
             height: '100%'
         },
         body: {
-            fontFamily: 'Inter, sans-serif',
+            fontFamily: 'Muli, sans-serif',
             margin: '0',
             padding: '0',
             fontSize: '16px',
