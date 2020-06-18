@@ -2,6 +2,15 @@ import { createUseStyles } from 'react-jss';
 import Color from 'color';
 
 export default createUseStyles(({ colors, breakpoints }) => ({
+    '@keyframes fadeLeft': {
+        from: { opacity: 0 },
+        to: { opacity: 1 }
+    },
+    '@keyframes fadeRight': {
+        '0%': { opacity: 0 },
+        '10%': { opacity: 0 },
+        '100%': { opacity: 1 }
+    },
     hero: {
         composes: 'Hero',
         display: 'flex',
@@ -74,7 +83,7 @@ export default createUseStyles(({ colors, breakpoints }) => ({
 
         [breakpoints.sm]: {
             fontSize: '1.2em',
-            margin: '0 0 2em',
+            margin: '0 0 2em'
         }
     },
     paragraph: {
@@ -98,6 +107,8 @@ export default createUseStyles(({ colors, breakpoints }) => ({
     },
     left: {
         order: 1,
+        animationName: '$fadeLeft',
+        animationDuration: '5s',
 
         [breakpoints.sm]: {
             width: '50%',
@@ -111,6 +122,8 @@ export default createUseStyles(({ colors, breakpoints }) => ({
         order: 0,
         display: 'flex',
         justifyContent: 'center',
+        animationName: '$fadeRight',
+        animationDuration: '5s',
 
         [breakpoints.sm]: {
             width: '50%',
