@@ -23,7 +23,7 @@ export default createUseStyles(({ breakpoints, colors }) => ({
     serviceCards: {
         display: 'flex',
         flexDirection: 'column',
-        margin: '-2em 1em 1em',
+        margin: '1em',
 
         [breakpoints.sm]: {
             margin: '1em 0',
