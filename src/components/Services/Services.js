@@ -23,10 +23,11 @@ const Services = () => {
                     exhaust, brakes, transmission, oil and engine filters to
                     name just a few of the components we look at.
                 </ServiceCard>
-                <ServiceCard title="MOTs">
-                    As an approved MOT station, we can check your vehicle for
-                    roadworthiness, safety and environmental compliance. Give us
-                    to book your vehicle in.
+                <ServiceCard title="Car Sales">
+                    We procure, maintain and sell a range of quality second hand
+                    vehicles. Check our social media to see more information on
+                    the cars we're currently selling. Feel free to contact us if
+                    you'd like more details.
                 </ServiceCard>
             </div>
         </div>
