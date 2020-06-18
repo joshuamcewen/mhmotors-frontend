@@ -52,7 +52,7 @@ export default createUseStyles(({ colors, breakpoints }) => ({
         margin: '2em -1.5em -1.5em',
 
         [breakpoints.sm]: {
-            margin: '2em 0 0'
+            margin: '0'
         }
     }
 }));
