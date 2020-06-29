@@ -13,6 +13,10 @@ export default createUseStyles(({ colors, breakpoints }) => ({
         display: 'flex',
         justifyContent: 'center',
 
+        '& a:last-child $social': {
+            marginRight: 0
+        },
+
         [breakpoints.sm]: {
             justifyContent: 'flex-start'
         }
@@ -24,10 +28,6 @@ export default createUseStyles(({ colors, breakpoints }) => ({
         borderRadius: '50%',
         padding: '1em',
         marginRight: '1em',
-
-        '&:last-child': {
-            marginRight: 0
-        },
 
         '&:hover': {
             cursor: 'pointer',
