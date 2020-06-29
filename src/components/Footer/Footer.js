@@ -9,14 +9,24 @@ const Footer = () => {
     return (
         <footer className={classes.footer}>
             <div className={classes.container}>
-                Design by{' '}
+                <span>
+                    Design by{' '}
+                    <a
+                        className={classes.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://joshmcewen.io"
+                    >
+                        Josh McEwen
+                    </a>
+                </span>
                 <a
-                    className={classes.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://joshmcewen.io"
+                    className={classes.cookieLink}
+                    onClick={() => {
+                        displayPreferenceModal();
+                    }}
                 >
-                    Josh McEwen
+                    Change Cookie Preferences
                 </a>
             </div>
         </footer>
